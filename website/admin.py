@@ -10,7 +10,7 @@ class ArticleAdmin(admin.ModelAdmin):
         models.TextField: {'widget': Textarea(attrs={'rows': 5, 'cols': 50})},
     }
 
-
+#
 admin.site.register(Article)
 admin.site.register(Tab)
 admin.site.register(AudioSample)
