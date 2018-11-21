@@ -1,0 +1,24 @@
+.jumbtron-fluid {
+    background-image: linear-gradient(#009EC0, #F7CAC9);
+    text-align: center
+}
+
+.circle-image {
+    border-radius: 50%;
+     width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+p.container {
+    text-align: center
+}
+
+a.black {
+    color: dark
+}
+
+.btn-primary {
+    background-color: #009EC0;
+    border-color: #009EC0;
+}
