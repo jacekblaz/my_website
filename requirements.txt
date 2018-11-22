@@ -4,4 +4,3 @@ django-crispy-forms==1.7.2
 django-heroku==0.3.1
 gunicorn==19.9.0
 Pillow
--e hg+https://bitbucket.org/etienned/pil-2009-raclette/#egg=PIL
