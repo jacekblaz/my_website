@@ -1,5 +1,4 @@
 from django.db import models
-from ckeditor_uploader.fields import RichTextUploadingField
 from django.contrib.auth.models import User
 
 class Tab(models.Model):
@@ -13,7 +12,7 @@ class Article(models.Model):
     tab = models.ForeignKey(Tab, on_delete=models.CASCADE)
     title = models.CharField(max_length=40, default='title')
     lead = models.CharField(max_length=200, default='lead')
-    article_text = RichTextUploadingField(blank=True, null=True)
+    article_text = models.CharField(max_length= 250, blank=True, null=True)
     link = models.URLField(max_length=200, blank=True)
 
 

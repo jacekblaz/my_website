@@ -39,14 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ckeditor',
-    'ckeditor_uploader',
     'crispy_forms',
     'accounts',
     'emorecog'
 ]
 
-CKEDITOR_UPLOAD_PATH = 'ck_uploads/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
