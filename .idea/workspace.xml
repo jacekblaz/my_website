@@ -4,9 +4,8 @@
     <list default="true" id="834e4238-1a59-449f-804f-4b1f03a98150" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme/settings_dev.py" afterPath="$PROJECT_DIR$/aboutme/settings_dev.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emorecog/views.py" afterPath="$PROJECT_DIR$/emorecog/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/website/index.html" afterPath="$PROJECT_DIR$/website/templates/website/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/website/style.css" afterPath="$PROJECT_DIR$/website/static/website/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,14 +19,14 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/static/website/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="551">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/templates/website/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="532">
@@ -105,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings_dev.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings_dev.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aboutme/settings_dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="88" selection-end-column="1" />
+            <state relative-caret-position="250">
+              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="90" selection-end-column="1" />
               <folding>
                 <element signature="e#307#327#0" expanded="true" />
               </folding>
@@ -202,17 +201,17 @@
         <option value="$PROJECT_DIR$/aboutme/settings.py" />
         <option value="$PROJECT_DIR$/../../wyszukiwanieinf/forwebcv/tdidf/tdidf.py" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/login_form.html" />
-        <option value="$PROJECT_DIR$/website/static/website/style.css" />
         <option value="$PROJECT_DIR$/website/templates/website/projects_overview.html" />
         <option value="$PROJECT_DIR$/website/models.py" />
         <option value="$PROJECT_DIR$/emorecog/forms.py" />
         <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/website/templates/website/article_detail.html" />
         <option value="$PROJECT_DIR$/emorecog/templates/emorecog/my_samples.html" />
-        <option value="$PROJECT_DIR$/aboutme/settings_dev.py" />
-        <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/emorecog/views.py" />
         <option value="$PROJECT_DIR$/website/templates/website/index.html" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/aboutme/settings_dev.py" />
+        <option value="$PROJECT_DIR$/website/static/website/style.css" />
       </list>
     </option>
   </component>
@@ -821,24 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aboutme/settings_dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="88" selection-end-column="1" />
-          <folding>
-            <element signature="e#307#327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="73" lean-forward="false" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -867,19 +848,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/static/website/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/templates/website/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="73" lean-forward="false" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/static/website/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboutme/settings_dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="90" selection-end-column="1" />
+          <folding>
+            <element signature="e#307#327#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

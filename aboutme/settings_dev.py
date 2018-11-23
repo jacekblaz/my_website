@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ckeditor',
+    'ckeditor_uploader',
     'crispy_forms',
     'accounts',
     'emorecog'
@@ -86,7 +88,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'crmDB',
         'USER': 'postgres',
-        'PASSWORD': '###',
+        'PASSWORD': '',
 
     }
 }

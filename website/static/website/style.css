@@ -23,7 +23,8 @@ a.black {
     border-color: #F7CAC9;
 }
 
-.btn-primary:hover {
-    background-color: #009EC0;
-    border-color: #009EC0;
+.btn-primary:hover, .btn-success:active, .btn-success:focus {
+  background-color: #009EC0 !important;
+  border-color: #009EC0 !important;
+  box-shadow: none !important;
 }
