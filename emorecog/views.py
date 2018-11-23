@@ -1,8 +1,9 @@
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import UploadSampleForm
 from django.contrib.auth.decorators import login_required
 from website.models import AudioSample
+
 
 
 @login_required(login_url='/login/')
@@ -15,7 +16,7 @@ def upload_sample(request):
             sample = form.save(commit=False)
             sample.user = request.user
             sample.save()
-            return HttpResponseRedirect('/')
+            return redirect('/emorecog/my_samples')
     return render(request, 'emorecog/upload_sample.html', {'form': form})
 
 @login_required(login_url='/login/')
