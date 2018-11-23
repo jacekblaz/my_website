@@ -21,7 +21,7 @@ class UploadSampleForm(forms.ModelForm):
         file = self.cleaned_data.get('audio_file')
         if file:
             if not os.path.splitext(file.name)[1] in [".mp3", ".wav"]:
-                raise forms.ValidationError("Doesn't have proper extension")
+                raise forms.ValidationError('Filetype not supported.')
             return file
         else:
             raise forms.ValidationError("Couldn't read uploaded file")

@@ -19,6 +19,11 @@ a.black {
 }
 
 .btn-primary {
+    background-color: #F7CAC9;
+    border-color: #F7CAC9;
+}
+
+.btn-primary:hover {
     background-color: #009EC0;
     border-color: #009EC0;
 }

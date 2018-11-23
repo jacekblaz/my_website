@@ -7,11 +7,15 @@ from django.contrib.auth import (
 from django.shortcuts import render, redirect
 
 from .forms import UserLoginForm, UserRegisterForm
+from website.models import Article
+
+
 
 
 def login_view(request):
     next = request.GET.get('next')
     title = "Login"
+    emo_recog_article = Article.objects.get(title__startswith="Emotion")
     form = UserLoginForm(request.POST or None)
     if form.is_valid():
         username = form.cleaned_data.get('username')
@@ -21,11 +25,12 @@ def login_view(request):
         if next:
             return redirect(next)
         return redirect('/')
-    return render(request, "accounts/login_form.html", {'form': form, 'title': title})
+    return render(request, "accounts/login_form.html", {'form': form, 'title': title, 'emo_recog_article': emo_recog_article})
 
 
 def register_view(request):
     title = "Register"
+    emo_recog_article = Article.objects.get(title__startswith="Emotion")
     form = UserRegisterForm(request.POST or None)
     if form.is_valid():
         user = form.save(commit=False)
@@ -36,7 +41,8 @@ def register_view(request):
         return redirect('/')
     context = {
         'form': form,
-        'title': title
+        'title': title,
+        'emo_recog_article': emo_recog_article
     }
     return render(request, "accounts/login_form.html", context=context)
 

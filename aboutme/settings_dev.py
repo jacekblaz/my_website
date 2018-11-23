@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'crmDB',
         'USER': 'postgres',
-        'PASSWORD': '###',
+        'PASSWORD': '####',
 
     }
 }

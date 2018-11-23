@@ -7,6 +7,8 @@ from website.models import AudioSample
 
 @login_required(login_url='/login/')
 def upload_sample(request):
+
+    form = UploadSampleForm()
     if request.method == 'POST':
         form = UploadSampleForm(request.POST, request.FILES)
         if form.is_valid():
@@ -14,8 +16,6 @@ def upload_sample(request):
             sample.user = request.user
             sample.save()
             return HttpResponseRedirect('/')
-    else:
-        form = UploadSampleForm()
     return render(request, 'emorecog/upload_sample.html', {'form': form})
 
 @login_required(login_url='/login/')

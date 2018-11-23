@@ -9,14 +9,41 @@
 </head>
 <body>
 {% block content %}
-{% for sample in user_samples %}
-{{sample.title}}
-{{sample.emotion}}
-{{sample.audio_file}}
-<audio controls>
-  <source src="/media/{{sample.audio_file}}" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-{% endfor %}
+<div class="row">
+    <div class="col text-center"><h2>{{user.username}} samples</h2></div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-10 text-center">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Emotion</th>
+                    <th>Sample</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for sample in user_samples %}
+                <tr>
+                    <td class="align-middle">{{sample.title}}</td>
+                    <td class="align-middle">{{sample.emotion}}</td>
+                    <td class="align-middle">
+                        <audio controls>
+                            <source src="/media/{{sample.audio_file}}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
 {% endblock %}
 </body>

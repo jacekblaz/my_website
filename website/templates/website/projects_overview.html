@@ -10,16 +10,16 @@
 {% block content %}
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4">Projects</h1>
-      <p class="lead">Here are my most advanced projects made for commercial, school and personal use</p>
+      <p class="lead">My projects created for commercial, school and personal use</p>
 </div>
 <div class="container">
     <div class="card-deck mb-3 text-center">
         {% for article in article_list %}
         <div class="card mb-4 box-shadow">
-            <div class="card-header flex-column">
-                <h3 class="my-0 font-weight-normal">{{article.title}}</h3>
+            <div class="card-header d-flex align-items-center justify-content-center h-100">
+                <h3 class="my-0 font-weight-normal flex-grow-1">{{article.title}}</h3>
             </div>
-            <div class="card-body flex-column d-flex">
+            <div class="card-body ">
                 <p class="text-center">{{article.lead}}</p>
                 <a href="{% url 'website:article_detail' article.id %}" class="btn btn-lg btn-block btn-primary mt-auto">Read more</a>
             </div>

@@ -22,9 +22,11 @@
             <p class="text-justify">{{article.article_text | safe}}</p>
         </div>
         <div class="col align-self-center">
+            {% if article.link %}
             <a href="{{article.link}}" target="_blank">
                 <i class="fa fa-fw fa-2x fa-github-square valign-middle" style="color: #212529"></i>
             </a>
+            {% endif %}
         </div>
     </div>
 </div>
@@ -35,14 +37,21 @@
         </div>
         <div class="col-10 text-center">
             {%for image in images %}
+            {% if image.photo %}
             <img src="/media/{{image.photo}}" class="img-fluid">
+            {% endif %}
+            {% if image.link %}
+            <img src="{{image.link}}" class="img-fluid">
+            {% endif %}
             <br><br><br>
             {% endfor %}
         </div>
-        <div class="col align-self-center">
+        <div class="col">
         </div>
     </div>
 </div>
+
+
 {% endblock %}
 </body>
 
